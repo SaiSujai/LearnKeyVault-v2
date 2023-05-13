@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form enctype="multipart/form-data"  asp-controller="FileUpload" asp-action="Index">
+    <div class="card-header">Upload Files </div>
+    <div class="card=body"> <input type="file" name="files" multiple /> </div>
+    <div class="card-footer"> <input type="submit" class="btn btn-primary" value="upload" /> </div>
+</form>
